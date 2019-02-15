@@ -19,7 +19,8 @@ soine有一个非常显著的特点就是自由度高，它是一个弱类型的
  - var 变量
  - list 列表
  - tree 树
- - graph 图  
+ - graph 图
+
 如想获得更多数据类型，请import对应的标准库。
 ## Grammars
 
