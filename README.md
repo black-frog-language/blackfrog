@@ -15,15 +15,15 @@ soine有一个非常显著的特点就是自由度高，它是一个弱类型的
 
 ## Types
 因为soine是一个弱类型语言，变量有如下的类型：  
- - num 数
- - str 字符串
- - bool 布尔值
- - list 列表/向量
+ - ```num``` 数
+ - ```str``` 字符串
+ - ```bool``` 布尔值
+ - ```list``` 列表/向量
 
 另外，也可以使用```import```来获得更多数据类型。
 soine支持大量的数据类型，都可以在标准库中找到。
 ## Grammars
-
+ 
 ## Development
 
 ## Others
