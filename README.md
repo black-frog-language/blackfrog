@@ -83,11 +83,20 @@ soine 是一个动态类型语言。暴露在全局作用域的类如下：
 ```
 
 #### variables
+像这样声明变量：
 ```soine
 var name: Type = value
 const name: Type = value
 // Type 和 value 可省略
 ```
+
+并像这样赋值：
+
+```soine
+name = value
+```
+
+可以这样展开一个对象：
 
 ```soine
 var { a, b } = value
@@ -96,12 +105,16 @@ var { a, b } = value
 // Type 可以被添加到单独的名称上，也可以添加到大括号上。
 ```
 
+并且可以在展开时设置别名：
+
 ```soine
 var { a: alias, b } = value
 // alias = value.a
 // b = value.b
 // alias 语法可以嵌套大括号赋值。
 ```
+
+也可以展开数组：
 
 ```soine
 var [a, b] = value
@@ -111,6 +124,8 @@ var [a, b] = value
 ```
 
 #### import
+导入与赋值语法相似；最大的区别是将 `var ... = ...` 改为了 `import ... from ...`。
+
 ```soine
 import * from 'module' // 导入全部，并展开到全局
 import name from 'module' // 导入全部到 name 对象中
