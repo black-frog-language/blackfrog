@@ -67,14 +67,61 @@ soine 是一个动态类型语言。暴露在全局作用域的类如下：
 
 ### Syntax
 
-#### style
+#### comments
+```soine
+// 单行注释
+/*
+  多
+  行
+  注释
+ */
+/*!
+  多行注释
+  包含版权声明
+ */
+#! Hashbang 也是注释
+```
 
-#### sentence
+#### variables
+```soine
+var name: Type = value
+const name: Type = value
+// Type 和 value 可省略
+```
+
+```soine
+var { a, b } = value
+// a = value.a
+// b = value.b
+// Type 可以被添加到单独的名称上，也可以添加到大括号上。
+```
+
+```soine
+var { a: alias, b } = value
+// alias = value.a
+// b = value.b
+// alias 语法可以嵌套大括号赋值。
+```
+
+```soine
+var [a, b] = value
+// a = value[0]
+// b = value[1]
+// Type 可以被添加到单独的名称上，也可以添加到中括号上。
+```
+
+#### import
+```soine
+import * from 'module' // 导入全部，并展开到全局
+import name from 'module' // 导入全部到 name 对象中
+import { a, b } from 'module' // 导入 a, b
+// 与赋值语法相同，可以嵌套大括号导入。
+```
 
 ### Development
 
-### project
+#### project
 
-### application
+#### application
 
 ### Others
