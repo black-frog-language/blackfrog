@@ -31,9 +31,11 @@ soine 是一个动态类型语言。暴露在全局作用域的类如下：
 
 #### `data_structures`
 - `Set` 集合
+- `DSet` 并查集
 - `Graph` 图
 - `Tree` 树
 - `BTree (extends Tree)` 二叉树
+- `SegTree` 线段树
 - `Bitset (implements List)` 二进制数组
 
 #### `async`
@@ -51,6 +53,8 @@ soine 是一个动态类型语言。暴露在全局作用域的类如下：
 
 #### `regex`
 - `Regex` 正则表达式
+
+
 
 #### `thread`
 - `Thread` 线程
