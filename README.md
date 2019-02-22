@@ -129,6 +129,7 @@ var [a, b] = value
 导入与赋值语法相似；最大的区别是将 `var ... = ...` 改为了 `import ... from ...`。
 
 ```soine
+import 'module' // 特殊：不暴露到当前作用域，仅运行模块
 import * from 'module' // 导入全部，并展开到全局
 import name from 'module' // 导入全部到 name 对象中
 import { a, b } from 'module' // 导入 a, b
