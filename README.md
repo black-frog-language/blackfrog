@@ -54,20 +54,18 @@ soine 是一个动态类型语言。暴露在全局作用域的类如下：
 #### `regex`
 - `Regex` 正则表达式
 
-
-
 #### `thread`
 - `Thread` 线程
 
 #### `error`
-- `Error` 错误
-- `TypeError (extends Error)` 类型错误
-- `RefError (extends Error)` 空值错误
-- `RangeError (extends Error)` 区间错误
-- `SyntaxError (extends Error)` 语法错误
-- `FsError (extends Error)` 文件错误
-- `NetError (extends Error)` 网络错误
-- `SysError (extends Error)` 系统错误
+- `Err` 错误
+- `TypeErr (extends Err)` 类型错误
+- `RefErr (extends Err)` 空值错误
+- `RangeErr (extends Err)` 区间错误
+- `SyntaxErr (extends Err)` 语法错误
+- `FsErr (extends Err)` 文件错误
+- `NetErr (extends Err)` 网络错误
+- `SysErr (extends Err)` 系统错误
 
 ### Syntax
 
@@ -112,7 +110,7 @@ var { a, b } = value
 并且可以在展开时设置别名：
 
 ```soine
-var { a: alias, b } = value
+var { alias = a, b } = value
 // alias = value.a
 // b = value.b
 // alias 语法可以嵌套大括号赋值。
