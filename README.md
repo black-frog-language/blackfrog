@@ -1,6 +1,6 @@
 # SOINE
 a language
->注：目前的更新请在branch中的readme查看
+>注：目前的更新请在branch中的readme查看  
 soine是一个通过噪声编程的语言。
 ## Why soine?
 这个新的语言叫soine的原因是噪声的英文(noise)和科学(science)结合而成，将s与n交换而成的。  
