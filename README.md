@@ -24,9 +24,74 @@ soine以动态内存存储变量，这让用户可以更方便地切换类型。
 
 另外，也可以使用```import```来获得更多数据类型。
 soine支持大量的数据类型，都可以在标准库中找到。
-## Grammars
- ### style
- ### sentence
+### Syntax
+
+#### comments
+```soine
+// 单行注释
+/*
+  多
+  行
+  注释
+ */
+/*!
+  多行注释
+  包含版权声明
+ */
+#! Hashbang 也是注释
+```
+
+#### variables
+像这样声明变量：
+```soine
+var name: Type = value
+const name: Type = value
+// Type 和 value 可省略
+```
+
+并像这样赋值：
+
+```soine
+name = value
+```
+
+可以这样展开一个对象：
+
+```soine
+var { a, b } = value
+// a = value.a
+// b = value.b
+// Type 可以被添加到单独的名称上，也可以添加到大括号上。
+```
+
+并且可以在展开时设置别名：
+
+```soine
+var { alias = a, b } = value
+// alias = value.a
+// b = value.b
+// alias 语法可以嵌套大括号赋值。
+```
+
+也可以展开数组：
+
+```soine
+var [a, b] = value
+// a = value[0]
+// b = value[1]
+// Type 可以被添加到单独的名称上，也可以添加到中括号上。
+```
+
+#### import
+导入与赋值语法相似；最大的区别是将 `var ... = ...` 改为了 `import ... from ...`。
+
+```soine
+import 'module' // 特殊：不暴露到当前作用域，仅运行模块
+import * from 'module' // 导入全部，并展开到全局
+import name from 'module' // 导入全部到 name 对象中
+import { a, b } from 'module' // 导入 a, b
+// 与赋值语法相同，可以嵌套大括号导入。
+```
 ## Development
  ### project
  ### application
