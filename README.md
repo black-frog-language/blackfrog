@@ -19,7 +19,7 @@ soine以动态内存存储变量，这让用户可以更方便地切换类型。
 在soine里，有丰富的标准库，用户们可以轻松地使用标准库中的API来更好地办公，里面包含了数据结构，算法，网络开发，GUI设计，电脑管理等多种丰富的内容。这也是所谓超级语言的超级之处。
 我们使用树的方式来储存标准库，用户们用`.`的方式来访问子目录。
 标准库如下：
-- datastruct 数据结构
+- data_structures 数据结构
 - http http操作
 - soigui 图形用户界面（GUI）
 - math 数学
@@ -28,7 +28,13 @@ soine以动态内存存储变量，这让用户可以更方便地切换类型。
 - markdown markdown编辑
 - thread 多线程
 - security 安全系统，加密
+- draw 图像显示
 - OS 操作系统
+- async
+- io 输入输出流
+- time 时间
+- regex 正则表达式
+- error 错误
 
 ## Types
 因为soine是一个弱类型语言，变量有如下的类型：  
