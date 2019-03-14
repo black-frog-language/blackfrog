@@ -24,10 +24,10 @@ soine以动态内存存储变量，这让用户可以更方便地切换类型。
 
 另外，也可以使用```import```来获得更多数据类型。
 soine支持大量的数据类型，都可以在标准库中找到。
-## Grammars
- ### style
- ### sentence
-## Development
- ### project
- ### application
-## Others
+### Development
+
+#### project
+
+#### application
+
+### Others
