@@ -92,7 +92,11 @@ import name from 'module' // 导入全部到 name 对象中
 import { a, b } from 'module' // 导入 a, b
 // 与赋值语法相同，可以嵌套大括号导入。
 ```
-## Development
- ### project
- ### application
-## Others
+### Development
+
+#### project
+
+#### application
+
+### Others
+
