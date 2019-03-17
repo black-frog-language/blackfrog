@@ -1,7 +1,7 @@
 # SOINE
 a language  
 soine是一个通过噪声编程的语言  
->注：目前的更新请在branch中的readme查看  
+>注：目前的更新请在各大branch中的README查看  
 ## Why soine?
 这个新的语言叫soine的原因是噪声的英文(noise)和科学(science)结合而成，将s与n交换而成的。  
 而至于为什么要把噪声与此语言相联系是因为一位将来将会十分伟大的噪学家宋本忠，将噪声与科学中的所有学科相联系
